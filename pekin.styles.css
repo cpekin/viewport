@@ -164,11 +164,16 @@ main, header, footer{
 header, footer{
     padding: 1em;
 }
+/* 
+//FETAURE QUERY FOR GRID SUPPORT HERE>? */
+@supports (display: grid) {
 
 main{
     max-width: 1795px;
     /* new */
   margin: 0 auto;
+}
+
 }
 
 /* ----- CONTAINERS ----- */
@@ -316,10 +321,15 @@ header, footer{
 
 /* ---------- ADJUSTING RESPONSIVE IMAGE SIZE ---------- */
 /* --------------- BEGIN RESPONSIVE IMAGE ADJUST SIZES --------------- */
-    /* img{
+   @media (min-width: 86.25em) {
+img{
         width: 300px;
         max-width: 300px;
-    } */
+    }
+
+
+   }
+
 /* --------------- END RESPONSIVE IMAGE ADJUST SIZES --------------- */
 
 
@@ -331,7 +341,7 @@ header, footer{
 
 /* ---------- EXTRA LARGE SCREEN STYLES ---------- */
 /* --------------- BEGIN EXTRA LARGE SCREEN SIZES --------------- */
-   @media screen and (min-width: 120em) {
+   @media screen and (min-width: 150em) {
 header, footer{
         background-color: var(--orange);
         padding-left: 5%;
